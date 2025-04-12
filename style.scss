@@ -1,0 +1,76 @@
+@import "./styles/variant.scss";
+@import "./styles/reset.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  flex-direction: column;
+  gap: 10px;
+  #title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    #selected {
+      color: map-get($map: $color, $key: main);
+      font-weight: 700;
+    }
+  }
+  #gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #gnb_left {
+      display: flex;
+      gap: 12px;
+      .gnb_nav {
+        display: flex;
+        gap: 28px;
+      }
+    }
+    #gnb_right {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      #search {
+        position: relative;
+        #seach_bar {
+          width: 330px;
+          height: 42px;
+          padding: 10px 20px;
+          border-radius: 30px;
+          border: 1px solid map-get($map: $color, $key: main);
+        }
+        .fa-magnifying-glass {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+        }
+      }
+      #gnb_icon {
+        display: flex;
+        gap: 28px;
+      }
+    }
+  }
+}

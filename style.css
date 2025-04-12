@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts/GmarketSansLight.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts/GmarketSansMedium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts//GmarketSansBold.otf");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+header #title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header #title #selected {
+  color: #006633;
+  font-weight: 700;
+}
+header #gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #gnb #gnb_left {
+  display: flex;
+  gap: 12px;
+}
+header #gnb #gnb_left .gnb_nav {
+  display: flex;
+  gap: 28px;
+}
+header #gnb #gnb_right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header #gnb #gnb_right #search {
+  position: relative;
+}
+header #gnb #gnb_right #search #seach_bar {
+  width: 330px;
+  height: 42px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #006633;
+}
+header #gnb #gnb_right #search .fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+header #gnb #gnb_right #gnb_icon {
+  display: flex;
+  gap: 28px;
+}

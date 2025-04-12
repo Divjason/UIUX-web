@@ -1,0 +1,35 @@
+$color: (
+  main: #006633,
+  sub: #935227,
+  accent: #ff0000,
+  dark01: #452a18,
+  dark02: #123825,
+  dark03: #515151,
+  dark04: #707070,
+  dark05: #000000,
+  gray01: #959595,
+  gray02: #cecece,
+  gray03: #eeeeee,
+  gray04: #f1f1f1,
+  light: #ffffff,
+);
+
+$font: (
+  Gmarket: Gmarket,
+);
+
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts/GmarketSansLight.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts/GmarketSansMedium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gmarket;
+  src: url("./fonts//GmarketSansBold.otf");
+  font-weight: 700;
+}
